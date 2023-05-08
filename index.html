@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+	<title>
+		Promedio de 3 notas
+	</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1>Promedio de 3 notas</h1>
+	<!-- <div>
+		<p>
+			Las mesas de examen ya finalizaron y el profesor le tomó un último examen especial a Cofla. Ya Cofla hizo 2 pruebas, pero lamentablemente se rompió el sistema de inscripción de notas, por ende habrá que crear una solución a este problema, desarrollando una web que sea capaz de simular su funcionamiento:
+		</p>
+		<ul>
+			<li>
+				Crear mini interfaz para introducir las notas
+			</li>
+			<li>
+				Validar que no haya errores
+			</li>
+			<li>
+				Se debe promediar la nota del profesor, con otras 2 notas de trabajos anteriores
+			</li>
+		</ul>
+		<p>
+			Si el promedio es igual o mayor a 7/10, pues aprueba la materia
+		</p>
+	</div> -->
+	<form>
+		<p>
+			Ingrese unas notas academicas (numeros entre 0 y 10), y <br>
+			presione el botón de sacar promedio. Si el resultado <br>
+			es mayor o igual a 7/10, aprueba la materia.
+		</p>
+		<div>
+			<span><strong>Nota 1</strong></span>
+		</div>
+		<input id="inputNotaUsuario1" type="number">
+		<span id="alertaDelInput1" hidden="true" title=""></span><br>
+		<div>
+			<span><strong>Nota 2</strong></span>
+		</div>
+		<input id="inputNotaUsuario2" type="number">
+		<span id="alertaDelInput2" hidden="true" title=""></span><br>
+		<div>
+			<span><strong>Nota 3</strong></span>
+		</div>
+		<input id="inputNotaUsuario3" type="number">
+		<span id="alertaDelInput3" hidden="true" title=""></span><br>
+		<br>
+		<input id="botonEnviar" type="submit" value="Sacar promedio">
+	<form>
+	<div>
+		<p id="parrafoResultado" hidden="true"></p>
+	</div>
+	<script src="scripts.js"></script>
+</body>
+</html>
